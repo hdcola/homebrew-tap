@@ -1,6 +1,6 @@
 cask "omnivoice" do
-  version "0.1.0"
-  sha256 "58981529e49c051ff15a85ca8f8ef3b5b8601450c7bf7d86bc835a9743c9ae81"
+  version "0.1.1"
+  sha256 "522289b34b0be60c0cc5dd8f4ab60833d0c3143f2007f7495f788f634e20eb9d"
 
   url "https://github.com/hdcola/OmniVoice/releases/download/v#{version}/OmniVoice-#{version}.dmg"
   name "OmniVoice"
@@ -10,6 +10,11 @@ cask "omnivoice" do
   depends_on macos: :tahoe
 
   app "OmniVoice.app"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   caveats <<~EOS
     OmniVoice #{version} is an internal test build: ad-hoc signed only,
