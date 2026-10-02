@@ -1,6 +1,6 @@
 cask "omnivoice" do
-  version "0.5.4"
-  sha256 "4c01ed7d46bf8690d5077f73eb8db42520f5415d6c01ca154e84e486b51e9696"
+  version "0.5.5"
+  sha256 "62fd8a63b3c550372c3995ec2e8421c98798ad61d3591a3f8ed806e749bcce22"
 
   url "https://github.com/hdcola/OmniVoice/releases/download/v#{version}/OmniVoice-#{version}.dmg"
   name "OmniVoice"
@@ -17,8 +17,8 @@ cask "omnivoice" do
   app "OmniVoice.app"
 
   caveats <<~EOS
-    OmniVoice #{version} is an internal test build: ad-hoc signed only,
-    not notarized. Gatekeeper will refuse to open it with something like
+    OmniVoice #{version} is an internal test build: signed with a self-signed
+    certificate, not notarized. Gatekeeper will refuse to open it with something like
     "OmniVoice.app is damaged and can't be opened" until you clear the
     quarantine flag:
 
