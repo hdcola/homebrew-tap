@@ -1,6 +1,6 @@
 cask "omnivoice" do
-  version "0.6.0"
-  sha256 "912534140556c0580e4969dc95d6398bff7bdee2b2fceb75be996d0c18b5751e"
+  version "0.6.1"
+  sha256 "d541ace74c203e866057007f2f7e42b5392270b7b35843dc5ed080daa03b1e6d"
 
   url "https://github.com/hdcola/OmniVoice/releases/download/v#{version}/OmniVoice-#{version}.dmg"
   name "OmniVoice"
